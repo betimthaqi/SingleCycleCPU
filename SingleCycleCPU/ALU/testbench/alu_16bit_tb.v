@@ -4,7 +4,7 @@
 // Engineer: 
 // 
 // Create Date: 05/24/2020 06:33:01 PM
-// Module Name: alu_32bit_tb
+// Module Name: alu_16bit_tb
 // Project Name: Single-Cycle CPU
 // Members: Aurel, Betim, Durajet.
 // 
@@ -17,7 +17,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_32bit_tb(
+module alu_16bit_tb(
 
     );
     
@@ -29,8 +29,8 @@ wire[15:0] result;
 wire cout;
 
 initial 
-$monitor ("a = %d, b = %d, cin = %b, cout = %b, op1 = %b, op0 = %b, ainvert = %b, bnegate = %b, less = %b, zero=%b, result=%d, overflow=%b",
-a, b, cin, cout, op[1], op[0], ainvert, bnegate, zero, result, overflow);
+$monitor ("a = %d, b = %d, cin = %b, cout = %b, op1 = %b, op0 = %b, ainvert = %b, bnegate = %b, result=%d",
+a, b, cin, cout, op[1], op[0], ainvert, bnegate, result);
 
 
 initial
@@ -56,5 +56,5 @@ begin
 #10 $stop;
 end
 
-alu_32bit a32(a, b, cin, ainvert, bnegate, op, result, cout, zero);
+alu_16bit a16(a, b, cin, ainvert, bnegate, op, result, cout, zero);
 endmodule

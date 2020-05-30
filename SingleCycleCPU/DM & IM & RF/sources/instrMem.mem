@@ -7,10 +7,10 @@
 0000
 0000
 0000
-4280 // addi $r2, $zero, 512 // 0100 0010 1000 0000 // opcode 2bit [01], rs 3 bit [$zero - 000], rt 3bit [$r2 - 010], [512hex ne bita 10000000]
-0A04 // add $r0, $r1, $2 // 0000 1010 0000 0100 // opcode 00, rs=$r1=001, rt=$2=010 ,rd=$r0=000, funksioni 00100 
-A114 // lw $r1, 20($r2) // 1001 0001 0001 0100 // opcode 10, rs=$r2=010, rt=$r1=001, immediate=20=00010100
-D100 // sw $r1, 0($r2) // 1101 0001 0000 0000 // opcode 11, rs=$r2=010, rt=$r1=001, immediate=0=00000000
+1324 //add $r1, $r2, $r3   //0001 0011 0010 0100 //opcode 2 bit [00], rs 3 bit [$r2 - 010], rt 3bit [$r3 - 011], rd 3 bit [$r1 - 001], funct 5 bit [00100]
+5164 //addi $r1, $r2, 100  //0100 0001 0110 0100 //opcode 2 bit [01], rs 3 bit [$r2 - 010], rt 3bit [$r1 - 001], immediate 16 bit [100 decimal ose 64 hex ose 01100100 binar]
+0000
+0000
 0000
 0000
 0000

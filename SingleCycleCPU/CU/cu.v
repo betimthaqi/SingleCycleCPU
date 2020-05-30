@@ -3,10 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/24/2020 02:59:29 PM
+// Create Date: 04/24/2020 02:59:29 PM
+// Design Name: 
 // Module Name: cu
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 

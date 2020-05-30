@@ -93,7 +93,7 @@ mux_2to1 M21HyrjeDM(MemToReg, result, ReadData, WD);
 DataMemory DM(result, RD2, MemWrite, MemRead, clk, ReadData);
 
 mux_2to1 M21HyrjeRF(s, RD, RT, z);
-RegisterFile RF(RS, RT, RD, WD, RFwe, clk, RD1, RD2);
+RegisterFile RF(RS, RT, z, WD, RFwe, clk, RD1, RD2);
 
 assign imm_long = {{8{immediate[7]}}, immediate[7:0]};
 mux_2to1 M21HyrjeALU(AluSrc, RD2, imm_long, alu2);

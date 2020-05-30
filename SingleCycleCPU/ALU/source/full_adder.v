@@ -3,11 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/20/2020 02:22:59 PM
+// Create Date: 03/20/2020 02:22:59 PM
 // Design Name: 
 // Module Name: full_adder
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 

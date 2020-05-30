@@ -3,10 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/24/2020 02:00:05 PM
+// Create Date: 04/24/2020 02:00:05 PM
+// Design Name: 
 // Module Name: mux_4to1
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 

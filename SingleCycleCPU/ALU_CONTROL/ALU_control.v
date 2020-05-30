@@ -1,38 +1,31 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
 // 
-// Create Date: 05/24/2020 01:52:15 PM
-// Module Name: ALU_control
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
+// Module Name: alu_control
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-module alu_control( ALUOp, Funct, ALU_Cnt);
- output reg[2:0] ALU_Cnt;
- input ALUOp;
- input [4:0] Funct;
+module alu_control( ALU_Cnt, ALUOp, Opcode);
+ output reg[3:0] ALU_Cnt;
+ input [1:0] ALUOp;
+ input [3:0] Opcode;
  wire [5:0] ALUControlIn;
- assign ALUControlIn = {ALUOp,Funct};
+ assign ALUControlIn = {ALUOp,Opcode};
  always @(ALUControlIn)
  casex (ALUControlIn)
 //  ALUOp|funct ||  Bnegate:OP
 //   10|x8421     ||      B|OP
 //   1 per R type | functioni 
-   6'b0xxxxx: ALU_Cnt=3'b010; // formati I
-   6'b100001: ALU_Cnt=3'b000; // and
-   6'b100010: ALU_Cnt=3'b001; // or
-   6'b100011: ALU_Cnt=3'b011; // xor
-   6'b100100: ALU_Cnt=3'b010; // add
-   6'b100111: ALU_Cnt=3'b110; // sub
-  default: ALU_Cnt=3'b000;
+   6'b10xxxx: ALU_Cnt=4'b0000; 
+   6'b01xxxx: ALU_Cnt=4'b0001;  
+   6'b100001: ALU_Cnt=4'b0000; // and
+   6'b100010: ALU_Cnt=4'b0010; // or
+   6'b100011: ALU_Cnt=4'b0011; // xor
+   6'b100100: ALU_Cnt=4'b0100; // add //addi spo di qysh
+   6'b100111: ALU_Cnt=4'b1100; // sub
+   6'b101000: ALU_Cnt=4'b0001; // sll
+   6'b101001: ALU_Cnt=4'b0110; // srl
+   6'b110000: ALU_Cnt=4'b0111; // mult
+   
+  default: ALU_Cnt=4'b0000;
   endcase
 endmodule

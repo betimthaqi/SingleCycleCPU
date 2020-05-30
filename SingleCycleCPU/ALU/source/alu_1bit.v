@@ -3,10 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/24/2020 01:52:15 PM
+// Create Date: 04/24/2020 01:52:15 PM
+// Design Name: 
 // Module Name: alu_1bit
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 
@@ -30,7 +33,7 @@ module alu_1bit(
     
 assign ainvert=0;
 	
-wire a, b, cin, ainvert, bnegate;
+wire a, b, cin, ainvert, bnegate, less;
 wire[1:0] op;
 
 wire result;
@@ -50,6 +53,6 @@ xor n5 (net6, net1, net2);
 
 full_adder FA (net1, net2, cin, net5, cout);
 
-mux_4to1 m4 (op[0], op[1], net3, net4, net5, net6, result);
+mux_4to1 m4 (op[0], op[1], net3, net4, net5, less, result);
 
 endmodule

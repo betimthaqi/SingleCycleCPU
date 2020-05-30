@@ -4,9 +4,12 @@
 // Engineer: 
 // 
 // Create Date: 05/08/2020 02:49:44 PM
+// Design Name: 
 // Module Name: DataMemory
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 

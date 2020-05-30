@@ -3,11 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/20/2020 01:49:36 PM
+// Create Date: 05/08/2020 01:49:36 PM
 // Design Name: 
 // Module Name: RegisterFile
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 

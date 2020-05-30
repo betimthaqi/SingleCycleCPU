@@ -4,9 +4,12 @@
 // Engineer: 
 // 
 // Create Date: 05/08/2020 02:41:58 PM
+// Design Name: 
 // Module Name: Memory
-// Project Name: Single-Cycle CPU
-// Members: Aurel, Betim, Durajet.
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 
@@ -15,7 +18,6 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
 module InstrMemory(input clk, input Hyrja, output Dalja
 
     );
